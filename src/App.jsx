@@ -6,16 +6,16 @@ function App() {
   const channels = ['freecodecamp', 'ESL_SC2', 'OgamingSC2', 'cretetion', 'storbeck', 'habathcx', 'RobotCaleb', 'noobs2ninjas'];
 
   useEffect(() => {
-    async function fetchData() {
-      const promises = channels.map(channel =>
-        axios.get(`https://twitch-proxy.freecodecamp.rocks/twitch-api/streams/${channel}`)
-      );
-      const responses = await Promise.all(promises);
-      const data = responses.map(response => response.data);
-      setStreamData(data);
-    }
-    fetchData();
-  }, []);
+  async function fetchData() {
+    const promises = channels.map(channel =>
+      axios.get(`https://twitch-proxy.freecodecamp.rocks/twitch-api/streams/${channel}`)
+    );
+    const responses = await Promise.all(promises);
+    const data = responses.map(response => response.data);
+    setStreamData(data);
+  }
+  fetchData();
+}, [channels]);
 console.log(streamData);
   return (
     <div className='container'>
