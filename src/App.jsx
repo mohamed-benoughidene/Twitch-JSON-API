@@ -37,7 +37,7 @@ console.log(streamData);
           )}
         </div>
       ))}
-      <a href="" style={{marginTop: "15px"}}>Source code</a>
+      <a href="https://github.com/mohamed-benoughidene/Twitch-JSON-API" style={{marginTop: "15px"}}>Source code</a>
     </div>
   );
 }
