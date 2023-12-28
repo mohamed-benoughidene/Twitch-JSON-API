@@ -10,7 +10,7 @@ This project is a part of the FreeCodeCamp curriculum, specifically focusing on 
 
 - **Status and Streaming Information:** Provide information on whether a channel is currently streaming, along with details like the game being played.
 
-- **Interactive Interface:** Allow users to easily navigate through the Twitch channels and access additional information.
+- **Interactive Interface:** Allow users to easily navigate through the Twitch channels.
 ## Technologies Used
 HTML5
 Sass
